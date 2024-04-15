@@ -1,0 +1,13 @@
+prefix=/home/prateek/D_Drive/UNISYS/Models/Cataract/LLM/gemini-cataract
+exec_prefix=/home/prateek/D_Drive/UNISYS/Models/Cataract/LLM/gemini-cataract
+libdir=/home/prateek/D_Drive/UNISYS/Models/Cataract/LLM/gemini-cataract/lib
+sharedlibdir=/home/prateek/D_Drive/UNISYS/Models/Cataract/LLM/gemini-cataract/lib
+includedir=/home/prateek/D_Drive/UNISYS/Models/Cataract/LLM/gemini-cataract/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

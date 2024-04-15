@@ -1,0 +1,15 @@
+# tcl pkg-config source file
+
+prefix=/home/prateek/D_Drive/UNISYS/Models/Cataract/LLM/gemini-cataract
+exec_prefix=/home/prateek/D_Drive/UNISYS/Models/Cataract/LLM/gemini-cataract
+libdir=/home/prateek/D_Drive/UNISYS/Models/Cataract/LLM/gemini-cataract/lib
+includedir=${prefix}/include
+
+Name: Tool Command Language
+Description: Tcl is a powerful, easy-to-learn dynamic programming language, suitable for a wide range of uses.
+URL: https://www.tcl-tk.org/
+Version: 8.6.12
+Requires.private: zlib >= 1.2.3
+Libs: -L${libdir} -ltcl8.6 -ltclstub8.6
+Libs.private: -ldl -lz  -lpthread -lm
+Cflags: -I${includedir}

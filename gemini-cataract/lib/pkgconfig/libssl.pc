@@ -1,0 +1,11 @@
+prefix=/home/prateek/D_Drive/UNISYS/Models/Cataract/LLM/gemini-cataract
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: OpenSSL-libssl
+Description: Secure Sockets Layer and cryptography libraries
+Version: 3.0.13
+Requires.private: libcrypto
+Libs: -L${libdir} -lssl
+Cflags: -I${includedir}
